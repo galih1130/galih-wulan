@@ -183,9 +183,9 @@
                                                             <div class="editable mb-2 animate__animated animate__fadeInUp animate__slower"
                                                                 style="font-size:14.4px;">Kepada
                                                                 Yth.<br />Bapak/Ibu/Saudara/i</div>
-                                                            <div id="guestNameSlot"
+                                                            <div id="guestNameSlot2"
                                                                 class="editable color-accent h5 font-weight-bold mb-4 animate__animated animate__fadeInUp animate__slower"
-                                                                style="font-size:18px;">Tamu Undangan</div>
+                                                                style="font-size:18px;"></div>
 
                                                             <button
                                                                 class="btn-open-invitation btn btn-primary rounded-pill mb-4 animate__animated animate__fadeInUp animate__slow">
@@ -939,6 +939,12 @@
     <!-- not support modal -->
 
     <!-- start script -->
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const guest = urlParams.get('kepada');
+        const divElement = document.getElementById('guestNameSlot2');
+        divElement.innerHTML = guest;
+    </script>
 
     <script src="https://satumomen.com/themes/theme-app.js?v=20246"
         type="e497f4f62b3ac2b9d380fb41-text/javascript"></script>
@@ -962,6 +968,8 @@
     </script>
     <script src="https://satumomen.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
         data-cf-settings="e497f4f62b3ac2b9d380fb41-|49" defer></script>
+
+    
 </body>
 
 </html>
